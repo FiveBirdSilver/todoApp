@@ -1,0 +1,102 @@
+body {
+    background-color: floralwhite;
+    /* position: relative; */
+}
+button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+.contain {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: auto;
+    padding: 0 30px 30px 30px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Crete Round', serif;
+}
+.title h1 {
+    font-size: 36px;
+}
+.date, .editinput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.date p {
+    margin: 0;
+}
+.day p {
+    font-size: 36px;
+    padding-right: 5px;
+    color: rosybrown;
+}
+
+.listinput input {
+    width: 90%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: 'Gowun Dodum', sans-serif;
+    margin: 0 10px 30px 0;
+    padding: 0 0 5px 5px;
+}
+input:focus {
+    outline:none;
+}
+.listTodo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 5px 10px 5px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+.editinput {
+    display: flex;
+    justify-content: center;
+}
+.editinput input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-family: 'Gowun Dodum', sans-serif;
+    padding-bottom: 5px;
+    
+}
+.editinput input:focus {
+    cursor: auto;
+}
+.editinput span {
+    padding-bottom: 4px;
+}
+@media screen and (max-width:767px){
+    .contain {
+        width: 80%;
+        padding: 0 10px 15px 10px;
+
+    }
+    .title h1, .day p{
+        font-size: 24px;
+    }
+    .MonthNYear p {
+        font-size: 16px;
+    }
+    .listinput input, .listTodo, .editinput input {
+        font-size: 12px;
+    }
+   .editndelete button {
+    font-size: 8px;
+}
+}
